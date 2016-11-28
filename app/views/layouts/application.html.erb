@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MembersPrototype</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <%= PUGIN.get_component('modules/header') %>
+  <script type="application/ld+json">
+    <%= raw(@json_ld) %>
+  </script>
+  <%= yield %>
+  <%= PUGIN.get_component('modules/footer') %>
+</body>
+</html>

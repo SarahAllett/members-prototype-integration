@@ -1,0 +1,43 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+// Import settings
+@import '../../../pugin/app/assets/stylesheets/settings/fonts';
+@import '../../../pugin/app/assets/stylesheets/settings/spacing';
+@import '../../../pugin/app/assets/stylesheets/settings/colours';
+
+// Import generic styles
+@import '../../../pugin/app/assets/stylesheets/generic/box-sizing';
+@import '../../../pugin/app/assets/stylesheets/generic/typography';
+@import '../../../pugin/app/assets/stylesheets/generic/tables';
+@import '../../../pugin/app/assets/stylesheets/generic/shame';
+
+// Import bare-bones elements
+@import '../../../pugin/app/assets/stylesheets/elements/body';
+@import '../../../pugin/app/assets/stylesheets/elements/headings';
+@import '../../../pugin/app/assets/stylesheets/elements/links';
+@import '../../../pugin/app/assets/stylesheets/elements/lists';
+
+// Import objects
+@import '../../../pugin/app/assets/stylesheets/objects/grid-settings';
+@import '../../../pugin/app/assets/stylesheets/neat/neat';
+@import '../../../pugin/app/assets/stylesheets/objects/grid-layouts';
+
+// Import site-wide components
+@import '../../../pugin/app/assets/stylesheets/components/breadcrumbs';
+@import '../../../pugin/app/assets/stylesheets/components/footer';
+@import '../../../pugin/app/assets/stylesheets/components/header';
+@import '../../../pugin/app/assets/stylesheets/components/card';

@@ -1,0 +1,19 @@
+ul, ol {
+    margin: 0 0 0 $base-spacing-unit-small;
+    padding: 0;
+}
+
+li {
+    padding: $base-spacing-unit-tiny 0;
+}
+
+dl {
+    width: 100%;
+    margin: 0;
+    padding: $base-spacing-unit-tiny 0;
+}
+
+dt, dd {
+    margin: 0;
+    padding: $base-spacing-unit-tiny 0;
+}

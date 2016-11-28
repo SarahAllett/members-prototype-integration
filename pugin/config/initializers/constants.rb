@@ -1,0 +1,2 @@
+PUGIN = Pugin::ApplicationController
+
