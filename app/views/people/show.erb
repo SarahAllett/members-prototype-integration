@@ -1,4 +1,3 @@
-<%= PUGIN.get_component('modules/breadcrumb', {breadcrumbs: [{place: "Hello", slug: "hello"}, {place: "Goodbye", slug: "goodbye"}, {place: "Cheese", slug: "cheese"}]}) %>
 <%= PUGIN.get_component('modules/card', { name: defined?(@person.display_name) ? @person.display_name : "N/a", 
 	                                              info_title: "Constituency:", 
 	                                              info_description: defined?(@person.constituencies.first.name) ? @person.constituencies.first.name : "N/a", 

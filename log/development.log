@@ -9329,3 +9329,67 @@ app/views/people/show.erb:1:in `_app_views_people_show_erb___3743910921118953282
   Rendering /Users/waszczukc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /Users/waszczukc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
   Rendered /Users/waszczukc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.7ms)
+Started GET "/" for ::1 at 2016-11-28 15:37:20 +0000
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (1.4ms)
+  Rendered pugin/app/views/layouts/pugin/modules/_header.html.slim (9.5ms)
+  Rendered pugin/app/views/layouts/pugin/modules/_footer.html.slim (3.0ms)
+Completed 200 OK in 621ms (Views: 611.4ms)
+
+
+Started GET "/people" for ::1 at 2016-11-28 15:37:23 +0000
+Processing by PeopleController#index as HTML
+  Rendering people/index.erb within layouts/application
+  Rendered collection of people/_person.html.erb [4579 times] (222.2ms)
+  Rendered people/index.erb within layouts/application (224.0ms)
+  Rendered pugin/app/views/layouts/pugin/modules/_header.html.slim (2.4ms)
+  Rendered pugin/app/views/layouts/pugin/modules/_footer.html.slim (2.8ms)
+Completed 200 OK in 9468ms (Views: 285.4ms)
+
+
+Started GET "/people/2a671bce-869f-44bf-87fe-fa160e0117d8" for ::1 at 2016-11-28 15:37:34 +0000
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2a671bce-869f-44bf-87fe-fa160e0117d8"}
+  Rendering people/show.erb within layouts/application
+  Rendered pugin/app/views/layouts/pugin/modules/_breadcrumb.html.slim (33.6ms)
+  Rendered people/show.erb within layouts/application (57.8ms)
+Completed 500 Internal Server Error in 1018ms
+
+
+  
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    1: .c-fg
+    2:   ol.crumb
+    3:     - properties[:breadcrumbs].each_with_index do |breadcrumb, index|
+    4:       - index >= properties[:breadcrumbs].length ? url += breadcrumb[:slug] : url += breadcrumb[:slug] + "/"
+    5:       li
+    6:         a[href="#{breadcrumb[:slug]}" title="#"]
+    7:           = breadcrumb[:place]
+  
+app/views/people/show.erb:1:in `_app_views_people_show_erb___2231365784925858091_70194925569480'
+  Rendering /Users/waszczukc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/waszczukc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/waszczukc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.0ms)
+  Rendering /Users/waszczukc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/waszczukc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/waszczukc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/waszczukc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/waszczukc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (75.3ms)
+Started GET "/people/2a671bce-869f-44bf-87fe-fa160e0117d8" for ::1 at 2016-11-28 15:38:23 +0000
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2a671bce-869f-44bf-87fe-fa160e0117d8"}
+  Rendering people/show.erb within layouts/application
+  Rendered pugin/app/views/layouts/pugin/modules/_info-block.html.slim (5.2ms)
+  Rendered pugin/app/views/layouts/pugin/modules/_card.html.slim (39.6ms)
+  Rendered pugin/app/views/layouts/pugin/modules/_panel.html.slim (2.5ms)
+  Rendered pugin/app/views/layouts/pugin/modules/_info-block.html.slim (0.2ms)
+  Rendered pugin/app/views/layouts/pugin/modules/_info-block.html.slim (0.1ms)
+  Rendered pugin/app/views/layouts/pugin/modules/_info-block.html.slim (0.1ms)
+  Rendered pugin/app/views/layouts/pugin/modules/_contact.html.slim (61.6ms)
+  Rendered people/show.erb within layouts/application (6188.1ms)
+  Rendered pugin/app/views/layouts/pugin/modules/_header.html.slim (6.1ms)
+  Rendered pugin/app/views/layouts/pugin/modules/_footer.html.slim (6.3ms)
+Completed 200 OK in 7413ms (Views: 6809.6ms)
+
+
