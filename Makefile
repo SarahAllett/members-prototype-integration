@@ -1,4 +1,4 @@
-IMAGE = 165162103257.dkr.ecr.eu-west-1.amazonaws.com/membersprototype
+IMAGE = 165162103257.dkr.ecr.eu-west-1.amazonaws.com/membersprototypeint
 
 # GO_PIPELINE_COUNTER is the pipeline number, passed from our build agent.
 GO_PIPELINE_COUNTER?="unknown"
@@ -9,7 +9,7 @@ VERSION=0.1.$(GO_PIPELINE_COUNTER)
 
 # ECS-related
 ECS_CLUSTER = ci
-ECS_APP_NAME = MembersPrototype
+ECS_APP_NAME = membersprototypeint
 AWS_REGION = eu-west-1
 
 build :
