@@ -1,7 +1,5 @@
 <%= @constituency.name %>
 
-<%= p @constituency.inspect %>
-
 <ul>
   <% @constituency.members.each do |member| %>
       <li><%= member.display_name %>

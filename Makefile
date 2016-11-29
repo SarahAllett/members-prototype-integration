@@ -1,4 +1,4 @@
-IMAGE = 165162103257.dkr.ecr.eu-west-1.amazonaws.com/membersprototypeint
+IMAGE = 165162103257.dkr.ecr.eu-west-1.amazonaws.com/membersprototype
 
 # GO_PIPELINE_COUNTER is the pipeline number, passed from our build agent.
 GO_PIPELINE_COUNTER?="unknown"
@@ -9,7 +9,7 @@ VERSION=0.1.$(GO_PIPELINE_COUNTER)
 
 # ECS-related
 ECS_CLUSTER = ci
-ECS_APP_NAME = membersprototypeint
+ECS_APP_NAME = MembersPrototype
 AWS_REGION = eu-west-1
 
 build :
@@ -54,7 +54,6 @@ deploy-ecs-ci:
 
 scale-ci:
 	export DOCKER_HOST=$(DOCKER_SWARM_URL) && export IMAGE_NAME=$(IMAGE):$(VERSION) && docker-compose -f docker-compose.ci.yml scale web=3
-
 i:
 	@git submodule init
 	@git submodule update

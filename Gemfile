@@ -4,6 +4,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.0.0.1'
 
+# Pugin Plugin
+gem 'pugin', path: './pugin'
+
 gem 'slim-rails'
 
 # Use jquery as the JavaScript library
@@ -11,10 +14,8 @@ gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
-gem 'grom'
+gem 'grom', git: "https://github.com/ukpds/grom"
 gem 'json-ld', '2.1.0'
-
-gem 'pugin', path: './pugin'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

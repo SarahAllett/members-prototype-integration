@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/ukpds/grom
+  revision: 97b0fbdb284f34d670aaf050033e1700b13ae1bd
+  specs:
+    grom (0.1.0)
+      rails (~> 5.0.0, >= 5.0.0.1)
+
 PATH
   remote: ./pugin
   specs:
@@ -73,9 +80,6 @@ GEM
       railties (>= 3.0.0)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
-    grom (0.1.0)
-      activesupport
-      rails (~> 5.0.0, >= 5.0.0.1)
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
     hashdiff (0.3.1)
@@ -186,7 +190,7 @@ GEM
     therubyracer (0.12.2)
       libv8 (~> 3.16.14.0)
       ref
-    thor (0.19.4)
+    thor (0.19.1)
     thread_safe (0.3.5)
     tilt (2.0.5)
     turbolinks (5.0.1)
@@ -216,7 +220,7 @@ DEPENDENCIES
   byebug
   capybara
   factory_girl_rails
-  grom
+  grom!
   jquery-rails
   json-ld (= 2.1.0)
   passenger
