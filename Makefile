@@ -1,4 +1,4 @@
-APP_NAME = membersprototypeintegration
+APP_NAME = membersprototypeint
 
 IMAGE = 165162103257.dkr.ecr.eu-west-1.amazonaws.com/$(APP_NAME)
 
