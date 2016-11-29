@@ -9410,3 +9410,30 @@ Processing by PeopleController#show as HTML
 Completed 200 OK in 7439ms (Views: 6803.3ms)
 
 
+Started GET "/people/" for ::1 at 2016-11-28 16:49:38 +0000
+Processing by PeopleController#index as HTML
+Started GET "/people/3ca83ae9-cab4-4585-b812-51e3df968af8" for ::1 at 2016-11-28 16:49:39 +0000
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"3ca83ae9-cab4-4585-b812-51e3df968af8"}
+  Rendering people/show.erb within layouts/application
+  Rendering people/index.erb within layouts/application
+  Rendered collection of people/_person.html.erb [4579 times] (295.7ms)
+  Rendered people/index.erb within layouts/application (298.0ms)
+  Rendered pugin/app/views/layouts/pugin/modules/_header.html.slim (19.6ms)
+  Rendered pugin/app/views/layouts/pugin/modules/_footer.html.slim (2.7ms)
+Completed 200 OK in 21541ms (Views: 880.8ms)
+
+
+  Rendered pugin/app/views/layouts/pugin/modules/_info-block.html.slim (2.7ms)
+  Rendered pugin/app/views/layouts/pugin/modules/_card.html.slim (28.0ms)
+  Rendered pugin/app/views/layouts/pugin/modules/_panel.html.slim (3.2ms)
+  Rendered pugin/app/views/layouts/pugin/modules/_info-block.html.slim (0.1ms)
+  Rendered pugin/app/views/layouts/pugin/modules/_info-block.html.slim (0.1ms)
+  Rendered pugin/app/views/layouts/pugin/modules/_info-block.html.slim (0.1ms)
+  Rendered pugin/app/views/layouts/pugin/modules/_contact.html.slim (66.3ms)
+  Rendered people/show.erb within layouts/application (8731.0ms)
+  Rendered pugin/app/views/layouts/pugin/modules/_header.html.slim (0.1ms)
+  Rendered pugin/app/views/layouts/pugin/modules/_footer.html.slim (0.1ms)
+Completed 200 OK in 27210ms (Views: 9328.1ms)
+
+
