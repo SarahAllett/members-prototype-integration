@@ -1,13 +1,13 @@
 class PeopleController < ApplicationController
 
   def index
-    endpoint_url = "#{API_ENDPOINT}/people.ttl"
-    p endpoint_url
-    result = get_graph_data(endpoint_url)
-    @people = Person.all(result)
-    @json_ld = json_ld(result)
+    # endpoint_url = "#{API_ENDPOINT}/people.ttl"
+    # p endpoint_url
+    # result = get_graph_data(endpoint_url)
+    @people = Person.all
+    # @json_ld = json_ld(result)
 
-    format({ serialized_data: @people, graph_data: result })
+    format({ serialized_data: @people })
   end
 
   def show

@@ -11,7 +11,7 @@ gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
-gem 'grom', git: "https://github.com/ukpds/grom"
+gem 'grom'
 gem 'json-ld', '2.1.0'
 
 gem 'pugin', path: './pugin'
