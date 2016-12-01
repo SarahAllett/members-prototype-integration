@@ -9,10 +9,10 @@ class PeopleController < ApplicationController
 
   def show
     @person = Person.find(params[:id])
-    graph = @person.graph
-    @json_ld = json_ld(graph)
+    #graph = @person.graph
+    #@json_ld = json_ld(graph)
 
-    format({ serialized_data: @person, graph_data: graph })
+    format({ serialized_data: @person})
   end
 
   def members
